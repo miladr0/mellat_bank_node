@@ -1,0 +1,21 @@
+{
+  "name": "mellat_bank",
+  "author": "milad ranjbar <milad.mr.ranjbar@gmail.com> (http://github.com/miladr0)",
+  "keywords": ["mellat bank", "iran payment"],
+  "version": "0.1.0",
+  "description": "how to use mellat_bank gateway using node.js",
+  "repository": "https://github.com/miladr0",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "request": "^2.83.0",
+    "soap": "^0.16.0",
+    "moment": "^2.20.1"
+  },
+  "engines": {
+    "node": "^7.8.0"
+  }
+}

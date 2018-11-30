@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>پرداخت آنلاین</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+
+<div class="ContentWrapper">
+    <div class="header">
+        <div class="logo"></div>
+    </div>
+
+    <input type="number" id="credit" placeholder="مبلغ به ریال وارد کنید">
+    <button class="btn rounded primary" onclick="pay()">پرداخت</button>
+
+    <script type="text/javascript">
+        function pay() {
+            const credit = document.getElementById("credit").value;
+
+            if(credit !== null && credit !== "") {
+                window.location.href = 'pay/mellat/'+credit;
+            }else {
+                alert("مبلغ دلخواه برای پرداخت وارد کنید")
+            }
+
+        }
+    </script>
+</div>
+</body>
+</html>
+
+
+
+

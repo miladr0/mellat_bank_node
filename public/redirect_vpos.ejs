@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>پرداخت آنلاین</title>
+    <style>
+        body {
+            background: url("../images/content-bg.png") repeat-x;
+        }
+
+        .ContentWrapper {
+            margin: 70px auto;
+            width: 100%;
+            background-color: white;
+            border: 1px solid black;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .header {
+            height: 136px;
+            background: #55595C url("../images/header_bg.jpg") repeat;
+            width: 100%;
+        }
+
+        .header .logo {
+            height: 136px;
+            width: 312px;
+            background-image: url("../images/logo-area-bg.jpg");
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: 100% auto;
+            float: right;
+            position: relative;
+        }
+
+        .TextDescription {
+            font-family: Tahoma;
+            font-size: 16px;
+            padding-top: 80px;
+            padding-bottom: 30px;
+            direction: rtl;
+        }
+
+        input {
+            cursor: pointer;
+            font-family: Tahoma;
+            font-size: small;
+        }
+        .hide{
+            visibility: hidden;
+            position: absolute;
+            top: -1000px
+        }
+    </style>
+</head>
+<body>
+
+<div class="ContentWrapper">
+    <div class="header">
+        <div class="logo"></div>
+    </div>
+
+    <form method="post" name="formBank" id="formBank" action='<%= bank_url %>'>
+
+        <input type="hidden" value='<%= RefId %>' id="RefId" name="RefId">
+        <div class="TextDescription">
+            در حال انتقال به درگاه بانک ملت ...
+        </div>
+        <input type="submit" value="پرداخت" class="hide"/>
+
+    </form>
+
+</div>
+<script type="text/javascript">
+    <!--
+    window.onload=function(){
+        window.setTimeout(function() { document.formBank.submit(); }, 2000);
+    };
+    //-->
+</script>
+</body>
+</html>
+
+
+
+

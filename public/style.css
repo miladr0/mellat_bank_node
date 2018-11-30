@@ -1,0 +1,82 @@
+body {
+    background: url("images/content-bg.png") repeat-x;
+}
+
+.ContentWrapper {
+    margin: 70px auto;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.header {
+    height: 136px;
+    background: #55595C url("images/header_bg.jpg") repeat;
+    width: 100%;
+}
+
+.header .logo {
+    height: 136px;
+    width: 312px;
+    background-image: url("images/logo-area-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% auto;
+    float: right;
+    position: relative;
+}
+
+.TextDescriptionError {
+    font-family: Tahoma;
+    font-size: 16px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    direction: rtl;
+    color: #c12e2a;
+}
+
+.TextDescriptionMsg {
+    font-family: Tahoma;
+    font-size: 16px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    direction: rtl;
+    color: #2ab27b;
+}
+
+input {
+    cursor: pointer;
+    font-family: Tahoma;
+    font-size: small;
+}
+.hide{
+    visibility: hidden;
+    position: absolute;
+    top: -1000px
+}
+.btn {
+    font-family: Tahoma;
+    text-decoration: none;
+    margin:15px auto;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+.primary {
+    color: rgba(255,255,255,.87);
+    background-color: #0cc2aa;
+}
